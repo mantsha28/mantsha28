@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+//Compiler version g++ 6.3.0
+
+int main()
+{
+  int n, rev=0;
+    cout << "enter number:-";
+    cin>>n;
+    while(n!=0)
+    {
+      rev= rev*10;
+      rev= rev+n%10;
+      n=n/10;
+    }
+    cout<<"reverse no is:-"<<rev;
+    getch();
+}
