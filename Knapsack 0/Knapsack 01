@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include<iostream.h>
+void main()
+{
+  int v[20],w[20],i,j,W,n;
+  void knapsack(int(),int(),int,int)
+  clrscr();
+  printf ("no od object");
+  scanf("%d",&n);
+  printf ("capacity of knapsack");
+  scanf("%d",&w);
+  for(i=1;i<=n;i++)
+  {
+    printf ("enter weight & object",i);
+  scanf("%d",&w[i]);
+  scanf("%d",&v[j]);
+  }
+  knapsack(v,w,n,w)
+  getch();
+  void knapsack(int v[],int w[],int n,int w)
+  int k[20][20],i,j;
+  for(i=0;i<=n;i++)
+  {
+    for(j=0;j<=w;j++)
+    {
+      if(i=0||j=0)
+    }
+    else if(j<w[i])
+    {
+      k[i][j]=k[i-1][j];
+    }
+    {
+      if(k[i-1][j]>k[i-1][j-w[i]]+v[i])
+      {
+        k[i][j]=k[i-1][j];
+      }
+      else
+      {
+        k[i][j]=k[i-1][j-w[i]]+v[i])
+      }
+
+    }
+  }
+}
+for(i=0;i<=n;i++)
+{
+  for(j=0;j<=w;j++)
+  {
+    pritf("%d",k[i[j]]);
+   
+  }
+  pritf("/n");
+}
+printf("________________");
+printf("/n maximum possible profit %d",k[n][w]);
+printf("/n________________");
+getch();
