@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+  int n1,n2,i,hcf;
+    cout << "enter a value n1=";
+    cin>>n1;
+    cout << "enter a value n2=";
+    cin>>n2;
+    if(n1<n2)
+    {
+    n1=n1+n2;
+    n2=n1-n2;
+    n1=n1+n2;
+    }
+    for(i=0;i<n2;i++)
+    {
+      if(n1%i==0 && n2%i==0)
+      {
+        hcf=i;
+      }
+    }
+    cout<<"\n gcd:-"<<hcf;
+    return 0;
+}
